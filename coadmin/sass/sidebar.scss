@@ -1,0 +1,169 @@
+@import "variable";
+@import "mixin";
+html,body {
+	height: 100%;
+	width: auto!important;
+	overflow-x: hidden!important;
+	margin: 0;
+}
+.sidebar-tab-menu {
+	// min-height: 100%;
+	// height: auto!important;
+	height: 100%;
+	position: fixed;
+	
+	
+	background-color: $color3;
+	.sidebar-header {
+		color: $color2;
+		position: absolute;
+	}
+	.hidden-xs {
+		@include mQ(767px) {
+				display: none!important;
+		}
+	}
+	.list-group {
+		position: absolute;
+	}
+	.list-group .list-group-item, .list-group .nav-item .nav-link{
+		background: inherit;
+		border: none;
+		color: $color2;
+		font-size: 17px;
+		font-weight: 300;
+		letter-spacing: 2px;
+		&:hover {
+			color: darken($color2, 50%);
+		}
+		@include mQ(767px) {
+			margin-left: -5px;
+			font-size: 18px;
+		}
+		@include mQ(1024px, 768px) {
+			font-size: 14px;
+			text-align: center;
+		}
+		span.hidden-xs {
+			@include mQ(767px) {
+				display: none!important;
+			}
+		}
+}
+}
+.bhoechie-tab {
+	margin-left: 250px;
+	@include mQ(767px) {
+		margin-left: 60px;
+	}
+	@include mQ(1024px, 768px) {
+		margin-left: 125px;
+	}
+	@include mQ(1366px, 1024px) {
+		margin-left: 165px;
+	}
+}
+h4.fa-user {
+	@include mQ(767px) {
+		margin-top: 45px;
+	}
+}
+
+/////////////////////TAB CONTENT///////////////////////////
+.tab-content1 h1 {
+	color: $color1;
+}
+
+////////////////////PROFILE SECTION/////////////////////////
+///////////////////////////////////////////////////////////
+.change-pswd {
+	background-color: $color1;
+	color: $color2;
+	&:focus{
+		outline: none;
+	}
+	&:hover {
+		color: darken($color2, 30%);
+	}
+}
+.tab-content1 .fa {
+	color: $color1;
+	font-size: 18px;
+}
+
+
+////////////////////ADSMANIA////////////////////////////////
+#your-ads-admania table {
+	@include mQ(767px) {
+	thead {
+		font-size: 15px;
+	}
+	tbody {
+		font-size: 12px;
+	}
+}
+}
+
+///////////input fields//////////////////////////////////
+ input[type="text"] ,.post_ad input[type="email"],.post_ad input[type="tel"],  select{
+	font-size: 14px;
+	letter-spacing: 1px;
+	height: 44px;
+	&:focus {
+		outline: none;
+		border: 1px solid $color1;
+	}
+}
+ .custom-file-label {
+ 	font-size: 14px;
+	letter-spacing: 1px;
+	height: 38px;
+
+	&:focus {
+		outline: none;
+		border: 1px solid $color1;
+	}
+ }
+/////////////////////////ADHUB FORM/////////////////////////
+///////////////////////////////////////////////////////////
+section.container {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.catloc-div {
+	background-color: $color1;
+}
+.catloc-div input, .catloc-div select  {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	border-radius: 0px;
+	border: none;
+}
+.post_ad .card-header {
+	color: $color1;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.label-font {
+	font-size: 14px;
+	color: $color1;
+	letter-spacing: 2px;
+}
+.image-header {
+	font-size: 20px;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	color: $color1;
+}
+.SubmitForReview {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	color: $color2;
+	background-color: $color1;
+	border: none;
+	border-radius: 0px;
+	margin-top: 10px;
+	padding: 6px 28px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+

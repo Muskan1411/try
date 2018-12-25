@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  width: auto !important;
+  overflow-x: hidden !important;
+  margin: 0; }
+
+.sidebar-tab-menu {
+  height: 100%;
+  position: fixed;
+  background-color: #303030; }
+  .sidebar-tab-menu .sidebar-header {
+    color: #fff;
+    position: absolute; }
+  @media screen and (max-width: 767px) {
+    .sidebar-tab-menu .hidden-xs {
+      display: none !important; } }
+  .sidebar-tab-menu .list-group {
+    position: absolute; }
+  .sidebar-tab-menu .list-group .list-group-item, .sidebar-tab-menu .list-group .nav-item .nav-link {
+    background: inherit;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    .sidebar-tab-menu .list-group .list-group-item:hover, .sidebar-tab-menu .list-group .nav-item .nav-link:hover {
+      color: gray; }
+    @media screen and (max-width: 767px) {
+      .sidebar-tab-menu .list-group .list-group-item, .sidebar-tab-menu .list-group .nav-item .nav-link {
+        margin-left: -5px;
+        font-size: 18px; } }
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+      .sidebar-tab-menu .list-group .list-group-item, .sidebar-tab-menu .list-group .nav-item .nav-link {
+        font-size: 14px;
+        text-align: center; } }
+    @media screen and (max-width: 767px) {
+      .sidebar-tab-menu .list-group .list-group-item span.hidden-xs, .sidebar-tab-menu .list-group .nav-item .nav-link span.hidden-xs {
+        display: none !important; } }
+
+.bhoechie-tab {
+  margin-left: 250px; }
+  @media screen and (max-width: 767px) {
+    .bhoechie-tab {
+      margin-left: 60px; } }
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    .bhoechie-tab {
+      margin-left: 125px; } }
+  @media screen and (max-width: 1366px) and (min-width: 1024px) {
+    .bhoechie-tab {
+      margin-left: 165px; } }
+
+@media screen and (max-width: 767px) {
+  h4.fa-user {
+    margin-top: 45px; } }
+
+.tab-content1 h1 {
+  color: #901108; }
+
+.change-pswd {
+  background-color: #901108;
+  color: #fff; }
+  .change-pswd:focus {
+    outline: none; }
+  .change-pswd:hover {
+    color: #b3b3b3; }
+
+.tab-content1 .fa {
+  color: #901108;
+  font-size: 18px; }
+
+@media screen and (max-width: 767px) {
+  #your-ads-admania table thead {
+    font-size: 15px; }
+  #your-ads-admania table tbody {
+    font-size: 12px; } }
+
+input[type="text"], .post_ad input[type="email"], .post_ad input[type="tel"], select {
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 44px; }
+  input[type="text"]:focus, .post_ad input[type="email"]:focus, .post_ad input[type="tel"]:focus, select:focus {
+    outline: none;
+    border: 1px solid #901108; }
+
+.custom-file-label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 38px; }
+  .custom-file-label:focus {
+    outline: none;
+    border: 1px solid #901108; }
+
+section.container {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.catloc-div {
+  background-color: #901108; }
+
+.catloc-div input, .catloc-div select {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 0px;
+  border: none; }
+
+.post_ad .card-header {
+  color: #901108;
+  text-transform: uppercase;
+  font-size: 18px; }
+
+.label-font {
+  font-size: 14px;
+  color: #901108;
+  letter-spacing: 2px; }
+
+.image-header {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #901108; }
+
+.SubmitForReview {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: #fff;
+  background-color: #901108;
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+  padding: 6px 28px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }

@@ -1,0 +1,128 @@
+@import "mixin";
+@import "variable";
+$textcolor: #F5F5DC;
+$textfont: 'Work Sans';
+$headingSize: 68px;
+
+body {
+	margin-top: 7%;
+	@include mQ(661px, 100px) {
+		margin-top: 35%;
+	}
+	
+}
+#head {
+	color: $color2;
+	font-family: $textfont;
+	h1.heading {
+		@include mQ(600px, 100px) {
+			font-size: 30px;
+			font-weight: bold;
+		}
+		font-size: $headingSize;
+		font-weight: lighter;
+	}
+}
+.center {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-group {
+	border-bottom: 2px solid #ccc;
+}
+.effect-1 {
+	position: relative;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	background: inherit;
+
+	&:focus {
+		border:0;
+		box-shadow: none;
+		transition: all 0.8s;
+	}
+}
+.input-group-text {
+	border-radius: 0;
+	border: 0;
+	color: $color2;
+	&:focus {
+		color: #901108;
+	}
+}
+.effect-1 ~ .focus-border{
+	position: absolute;
+	bottom: -2px; 
+	left: 0; 
+	width: 0; 
+	height: 2px;
+	background-color: $color2; 
+	transition: 0.4s;
+	}
+.effect-1:focus ~ .focus-border{
+	width: 100%; 
+	transition: 0.4s;
+}
+
+
+#back-card {
+	@include mQ(600px, 100px) {
+		padding: 10px;
+	}
+	padding: 50px;
+	position: relative;
+	background: #fff;
+	box-shadow: 0 10px 20px 0px #262626;
+}
+#back-card:before , #back-card:after{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	/*background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ff0000, #fb0094, #0000ff, #00ff00, #ff0000);*/
+	background: linear-gradient(45deg, #ff0000, #ff4d6a,	#800080,#b30000,#ff3355, #800000, #691669);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    box-shadow: 0 10px 20px;	
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+ #back-card:after {
+	filter: blur(200px);
+ }
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 20%;
+	}
+}
+.form-group {
+	padding-bottom: 15px;
+}
+.btnn {
+	color: $textcolor;
+	background: #901108;
+	border: none;
+	cursor: pointer; 
+	transform: scale(0.8);
+	border-radius: 200px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	&:hover {
+		background: lighten($color2, 5%);
+		color: $color3;
+		transform: scale(0.9);
+		transition: all 0.4s ease-in;
+	}
+}
+.btn-remove {
+	background-color: $color2;
+}

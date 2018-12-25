@@ -1,0 +1,144 @@
+@import "variable";
+@import "mixin";
+body,html {
+  height: 100vh;
+  background-color: $color1;
+}
+.card {
+  padding: 8vh;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  @include mQ(661px, 100px) {
+    margin-top: 50px; //change
+    padding: 4vh;
+  }
+}
+////login register links////
+.card-heading a{
+  text-decoration: none;
+  color: $color3;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 0.1s linear;
+  
+}
+.card-heading a.active {
+    color: $color1;
+    font-size: 1.3em;
+  }
+/////input fields/////
+.input-field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  
+}
+label {
+  position: absolute;
+  fot-size:0.5em;
+  top: 0;
+  width: 100%;
+  color: $color3;
+  transition: 0.3s all;
+}
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="date"] {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  border-bottom: 2px solid $color3;
+  &:focus , &:valid {
+     border-color: $color1;
+  }
+}
+
+input:focus~label,
+input:valid~label {
+  top: -18px;
+  color: $color1;
+}
+/////upload image btn/////
+.btn-file {
+  position: relative;
+  width: 80vw;
+  color: $color1;
+  padding: 13px 40px; 
+  border-radius: 200px;
+  cursor: pointer;
+      border: 1px solid $color1;
+      transform: scale(0.7);
+    background-color: transparent;
+    outline: 0;
+    &:hover {
+      background: lighten(transparent, 5%);
+      color: $color1;
+      transform: scale(0.8);
+      transition: all 0.4s ease-in;
+    } 
+  
+}
+//// button /////
+button {
+  background: none;
+  border: 2px solid $color1;
+  border-radius: 5px;
+  color: $color1;
+  display: block;
+  font-size: 0.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 1em 6em;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button, button::after {
+  transition: all 0.3s;
+}
+
+button::before,
+button::after {
+  background: $color1;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+button:hover {
+  color: $color3;
+
+}
+////not working////
+.submit-btn::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.submit-btn::after {
+  background: $color2;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.submit-btn:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+////profile image display/////
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 1px solid $color1;
+    border-radius: 50%;
+    
+}

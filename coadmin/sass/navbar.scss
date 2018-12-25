@@ -1,0 +1,104 @@
+$color1: #fff;
+$color2: #901108;
+$color3: #303030;
+@import "mixin";
+		.font-bold {
+			color: $color3;
+
+			&:hover {
+				color: lighten($color2, 6%);			
+			}
+		}
+		.nav-link {
+			color: $color2;
+			&:hover {
+				color: lighten($color2, 6%);
+				border: 0.5px solid $color2;
+				border-radius: 5px;
+			}
+			
+		}
+		
+		.border-maroon{
+		  -webkit-text-stroke: 1px $color1 ;
+		}
+		.navbar-toggler {
+			color: $color2;
+			&:focus {
+				outline: none;
+			}
+		}
+		nav.navbar {
+			background-color: $color1;
+		}
+		.opaque-navbar {
+    		background-color: rgba(255,255,255,1);
+   			border-bottom: 0px;
+    		transition: background-color .5s ease 0s;
+
+		}
+.active .nav-link{
+	color: $color3;
+	font-weight: 400;
+}
+
+.tagline {
+	color: $color2;
+}
+.opaque-navbar .opaque {
+    background-color: rgba(48,48,48,0.8);
+	border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+		.font-large {
+			font-weight: bolder;
+			font-size: 68px;
+			font-family: 'EB Garamond', serif;
+			@include mQ(661px, 100px) {
+				font-size: 48px;
+			}
+		}
+		.font-bold {
+			font-size: 50px;
+			font-family: 'Cinzel', serif;
+			@include mQ(661px, 100px) {
+				font-size: 30px;
+			}
+		}
+.nav-item:hover {
+	-webkit-animation: pulse 3s;
+    animation: pulse 3s;
+}
+.rubberBand:hover {
+	-webkit-animation: rubberBand 3s;
+    animation: rubberBand 3s;
+}
+#logo {
+	vertical-align:middle;
+}
+.navbar-brand span {
+	font-size:2rem;
+	line-height:1;
+	font-weight: 200;
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 0 0 0px;
+	@include mQ(661px, 100px) {
+		font-size: 1.5rem;
+
+	}
+}
+.navbar-brand span b {
+	display:block;
+	font-size:50%;
+	line-height:1;
+	padding-left: 10px;
+		@include mQ(661px, 100px) {
+		font-size: 60%;
+		padding-left: 0px;
+	}
+}
+.navbar-nav {
+	margin-left:auto;
+}

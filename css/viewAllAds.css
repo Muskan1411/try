@@ -1,0 +1,65 @@
+.more {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: #901108; }
+  .more:focus {
+    outline: none; }
+
+.div-inside-row .text, .div-inside-row {
+  height: 100%;
+  width: 100%; }
+
+.div-inside-row .text {
+  font-size: 30px;
+  color: #303030;
+  font-weight: 650;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif; }
+  @media screen and (max-width: 600px) {
+    .div-inside-row .text {
+      font-size: 30px; } }
+  .div-inside-row .text span {
+    letter-spacing: 2.5px; }
+
+.btnn {
+  font-family: 'Poppins', sans-serif;
+  background-color: #901108;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 6px 18px;
+  cursor: pointer; }
+
+#myModal input {
+  background-color: #fff; }
+
+.modal-title {
+  color: #901108;
+  font-weight: light;
+  font-size: 20px; }
+
+.close {
+  color: #901108;
+  font-size: 20px; }
+  .close:focus {
+    outline: none; }
+
+#coadmin_name {
+  text-transform: uppercase;
+  color: #901108; }
+
+.logo, .input-group-text {
+  color: #901108; }
+
+.fa-phone {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+a.btn {
+  padding: 0;
+  margin: 0; }
+  a.btn:focus {
+    outline: none; }

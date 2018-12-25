@@ -1,0 +1,52 @@
+@import "variable";
+@import "mixin";
+
+.findAds-div {
+	background-color: $color1;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.search-head {
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	color: $color3;
+	@include mQ(600px) {
+		font-size: 30px;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+}
+.select-box {
+	border-radius: 0px;
+	border-left: 2px solid $color2;
+	border-right: 2px solid $color2;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 400;
+	&:focus {
+		outline: none;
+	}
+}
+.input-group-prepend .input-group-text {
+	border: none;
+}
+.input-group-append .btn {
+	letter-spacing: 2px;
+}
+.input-group-append .btn, .input-group-prepend .input-group-text{
+	background-color: $color2;
+	color: $color3;
+	border-radius: 0px;
+}
+
+
+.container-fluid {
+	background-color: #f2f2f2;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23303030' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23303030' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}

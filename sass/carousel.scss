@@ -1,0 +1,55 @@
+@import "mixin";
+$color3: #fff;
+$color2: #303030;
+$color1: #901108;
+
+body {
+	@include mQ(661px, 100px) {
+		background: linear-gradient(to bottom, #901108, #fff, #fff, #fff,#901108);
+		
+	}
+	background: linear-gradient(to right, #303030, #fff, #303030);
+}
+.container {
+	position: relative;
+	top: 120px;
+	bottom: 0px;
+	@include mQ(661px, 100px) {
+		margin-top: 5%;
+		top: 50px;
+	}
+		
+}
+
+.carousel {
+	width:100%;
+}
+.carousel-indicators ,.carousel-control-prev ,.carousel-control-next{
+	background-color: black;
+}
+
+.place-list {
+	outline: none;
+	box-shadow: 0 10px 20px $color1;
+}
+.place-head {
+	background-color: $color1;
+	color: $color3;
+	font-weight: lighter;
+	font-family: 'Lora', serif;
+}
+.link{
+	color: $color1;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: 'EB Garamond', serif;
+	&:hover {
+		background-color: $color1;
+		color: $color3;
+	}
+}
+a._active {
+	outline: none;
+	border-left: 4px solid $color1;
+	background: linear-gradient(-90deg, $color1, $color3, $color3);
+}

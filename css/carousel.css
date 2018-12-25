@@ -1,0 +1,64 @@
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#303030), color-stop(#fff), to(#303030));
+  background: -webkit-linear-gradient(left, #303030, #fff, #303030);
+  background: -o-linear-gradient(left, #303030, #fff, #303030);
+  background: linear-gradient(to right, #303030, #fff, #303030); }
+  @media screen and (max-width: (661px, 100px)) {
+    body {
+      background: -webkit-gradient(linear, left top, left bottom, from(#901108), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#901108));
+      background: -webkit-linear-gradient(top, #901108, #fff, #fff, #fff, #901108);
+      background: -o-linear-gradient(top, #901108, #fff, #fff, #fff, #901108);
+      background: linear-gradient(to bottom, #901108, #fff, #fff, #fff, #901108); } }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    body {
+      background: -webkit-gradient(linear, left top, left bottom, from(#901108), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#901108));
+      background: -webkit-linear-gradient(top, #901108, #fff, #fff, #fff, #901108);
+      background: -o-linear-gradient(top, #901108, #fff, #fff, #fff, #901108);
+      background: linear-gradient(to bottom, #901108, #fff, #fff, #fff, #901108); } }
+
+.container {
+  position: relative;
+  top: 120px;
+  bottom: 0px; }
+  @media screen and (max-width: (661px, 100px)) {
+    .container {
+      margin-top: 5%;
+      top: 50px; } }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .container {
+      margin-top: 5%;
+      top: 50px; } }
+
+.carousel {
+  width: 100%; }
+
+.carousel-indicators, .carousel-control-prev, .carousel-control-next {
+  background-color: black; }
+
+.place-list {
+  outline: none;
+  -webkit-box-shadow: 0 10px 20px #901108;
+  box-shadow: 0 10px 20px #901108; }
+
+.place-head {
+  background-color: #901108;
+  color: #fff;
+  font-weight: lighter;
+  font-family: 'Lora', serif; }
+
+.link {
+  color: #901108;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'EB Garamond', serif; }
+  .link:hover {
+    background-color: #901108;
+    color: #fff; }
+
+a._active {
+  outline: none;
+  border-left: 4px solid #901108;
+  background: -webkit-gradient(linear, right top, left top, from(#901108), color-stop(#fff), to(#fff));
+  background: -webkit-linear-gradient(right, #901108, #fff, #fff);
+  background: -o-linear-gradient(right, #901108, #fff, #fff);
+  background: linear-gradient(-90deg, #901108, #fff, #fff); }

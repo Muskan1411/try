@@ -1,0 +1,93 @@
+.font-bold {
+  color: #303030; }
+  .font-bold:hover {
+    color: #ad140a; }
+
+.nav-link {
+  color: #901108; }
+  .nav-link:hover {
+    color: #ad140a;
+    border: 0.5px solid #901108;
+    border-radius: 5px; }
+
+.border-maroon {
+  -webkit-text-stroke: 1px #fff; }
+
+.navbar-toggler {
+  color: #901108; }
+  .navbar-toggler:focus {
+    outline: none; }
+
+nav.navbar {
+  background-color: #fff; }
+
+.opaque-navbar {
+  background-color: white;
+  border-bottom: 0px;
+  -webkit-transition: background-color .5s ease 0s;
+  -o-transition: background-color .5s ease 0s;
+  transition: background-color .5s ease 0s; }
+
+.active .nav-link {
+  color: #303030;
+  font-weight: 400; }
+
+.tagline {
+  color: #901108; }
+
+.opaque-navbar .opaque {
+  background-color: rgba(48, 48, 48, 0.8);
+  border-bottom: 0px;
+  -webkit-transition: background-color .5s ease 0s;
+  -o-transition: background-color .5s ease 0s;
+  transition: background-color .5s ease 0s; }
+
+.font-large {
+  font-weight: bolder;
+  font-size: 68px;
+  font-family: 'EB Garamond', serif; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .font-large {
+      font-size: 48px; } }
+
+.font-bold {
+  font-size: 50px;
+  font-family: 'Cinzel', serif; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .font-bold {
+      font-size: 30px; } }
+
+.nav-item:hover {
+  -webkit-animation: pulse 3s;
+  animation: pulse 3s; }
+
+.rubberBand:hover {
+  -webkit-animation: rubberBand 3s;
+  animation: rubberBand 3s; }
+
+#logo {
+  vertical-align: middle; }
+
+.navbar-brand span {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 0px; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .navbar-brand span {
+      font-size: 1.5rem; } }
+
+.navbar-brand span b {
+  display: block;
+  font-size: 50%;
+  line-height: 1;
+  padding-left: 10px; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .navbar-brand span b {
+      font-size: 60%;
+      padding-left: 0px; } }
+
+.navbar-nav {
+  margin-left: auto; }

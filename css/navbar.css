@@ -1,0 +1,88 @@
+.opaque-navbar {
+  background-color: white;
+  -webkit-transition: background-color .5s ease 0s;
+  -o-transition: background-color .5s ease 0s;
+  transition: background-color .5s ease 0s;
+  border-bottom: 0px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+nav.navbar {
+  background-color: #fff; }
+
+nav.navbar span {
+  color: #303030; }
+  nav.navbar span:hover {
+    color: #ad140a; }
+
+.nav-link {
+  color: #901108; }
+  .nav-link:hover {
+    color: #ad140a;
+    border: 0.5px solid #901108;
+    border-radius: 5px; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .nav-link:hover {
+      border: none; } }
+
+.nav-link .active {
+  color: #303030;
+  font-weight: 400; }
+
+.navbar-toggler {
+  color: #901108; }
+  .navbar-toggler:focus {
+    outline: none; }
+
+@media screen and (max-width: 661px) and (min-width: 100px) {
+  .nav-item:hover {
+    border: none;
+    border-left: 2px solid #901108;
+    padding-left: 10px; } }
+
+.tagline {
+  color: #901108; }
+
+.opaque-navbar .opaque {
+  background-color: rgba(48, 48, 48, 0.8);
+  border-bottom: 0px;
+  -webkit-transition: background-color .5s ease 0s;
+  -o-transition: background-color .5s ease 0s;
+  transition: background-color .5s ease 0s; }
+
+.nav-item:hover {
+  -webkit-animation: pulse 3s;
+  animation: pulse 3s; }
+
+.rubberBand:hover {
+  -webkit-animation: rubberBand 3s;
+  animation: rubberBand 3s; }
+
+#logo {
+  vertical-align: middle; }
+
+.navbar-brand span {
+  font-size: 38px;
+  line-height: 1;
+  font-family: 'Almendra', serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 0px; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .navbar-brand span {
+      font-size: 28px; } }
+
+.navbar-brand span b {
+  display: block;
+  font-size: 50%;
+  line-height: 1;
+  padding-left: 10px; }
+  @media screen and (max-width: 661px) and (min-width: 100px) {
+    .navbar-brand span b {
+      font-size: 60%;
+      padding-left: 0px; } }
+
+.navbar-nav {
+  margin-left: auto; }

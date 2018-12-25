@@ -1,0 +1,216 @@
+@import "mixin";
+$color3: #fff;
+$color2: #303030;
+$color1: #901108;
+body {
+	padding-top: 110px;
+	@include mQ(661px, 100px) {
+		padding-top: 100px;
+	}
+}
+.set-carousel-font {
+	font-size: 60px;
+	font-weight: lighter;
+	font-family: 'Lora', serif;
+	@include mQ(661px, 100px) {
+		font-size:42px;
+
+	}
+}
+#section-add {
+	padding: 2%;
+}
+#add_btn {
+	font-size: 55px;
+	font-weight: 100;
+	position: relative;
+	left: 0;
+	background-color: $color1;
+	color: $color3;
+	margin-top: 0px;
+	border: 1px solid $color3;
+	border-radius: 200px;
+	font-family: 'Lora', serif;
+	@include mQ(661px, 100px) {
+		margin-top: 0px;
+		font-size:32px;
+		padding: 0px 15px; 
+	}
+	&:focus {
+		outline: none;
+	}
+}
+/*****************************
+		 modal styling
+************************************/
+.modal-title {
+	font-family: 'Lora', serif;
+	font-weight: bold;
+}
+.close:focus {
+	outline: none;
+}
+input.form-control , select.form-control{
+
+	border-radius: 0px;
+}
+textarea.form-control {
+	border-radius: 0px;
+}
+#call {
+	display: none;
+	@include mQ(500px,100px) {
+		display:inline;
+	}
+}
+/*******************************************************/
+/*********   card flip *********/
+/*******************************************************/
+.card-flip {
+  perspective: 1000px;
+  &:hover .flip,
+  &.hover .flip {
+    transform: rotateY(180deg);
+  }
+}
+.card {
+  background-color:$color1;
+  border: none;
+  text-align: center;
+}
+.container-fluid {
+  background-color: $color1;
+  height: auto;
+  box-shadow: 0 8px 20px $color1;
+}
+.front {
+	color: $color3;
+	margin-top: 34px;
+	@include mQ(661px, 100px) {
+		margin-top: 40px;
+	}
+}
+.back {
+	
+}
+.card-flip,
+.front,
+.back {
+  padding: 1%;
+  width: 100%;
+  height: 200px;
+  @include mQ(661px, 100px) {
+  	height: 210px;
+  }
+}
+
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/*******************************************************/
+/********* Table *********/
+/*******************************************************/
+.table-responsive {
+	margin-top: 20px;
+
+}
+.table-header {
+	background-color: $color2;
+	color: $color3;
+	font-family: 'Cinzel', serif;
+	line-height: 20px;
+	@include mQ(661px, 100px) {
+		font-size: 12px;
+	}
+}
+.table-button {
+	@include mQ(661px, 100px) {
+		font-size: 10px;
+	}
+}
+tbody {
+	@include mQ(661px, 100px) {
+		font-size: 10px;
+	}
+}
+
+/*******************************************************/
+/********* Buttons *******/
+/*******************************************************/
+.btn-file {
+	position: relative;
+	left: -55px;
+		color: $color1;
+		padding: 13px 40px;
+		border-radius: 200px;
+	  	cursor: pointer;
+	  	z-index:1;
+	  	border: 1px solid $color1;
+	  	transform: scale(0.7);
+		background-color: transparent;
+		outline: 0;
+		&:hover {
+			background: lighten(transparent, 5%);
+			color: $color1;
+			transform: scale(0.8);
+			transition: all 0.4s ease-in;
+		} 
+}
+#upload_image, #upload_image1 , #upload_image2, #upload_image3 {
+	position: relative;
+	left: -75px;
+		color: $color1;
+		padding: 13px 20px;
+		border-radius: 200px;
+	  	cursor: pointer;
+	  	z-index:1;
+	  	border: 1px solid $color1;
+	  	transform: scale(0.6);
+		background-color: transparent;
+		outline: 0;
+		&:hover {
+			background: lighten(transparent, 5%);
+			color: $color1;
+			transform: scale(0.7);
+			transition: all 0.4s ease-in;
+		} 
+	
+}
+.btn-upload {
+	color: $color3;
+	padding: 13px 40px;
+	border-radius: 200px;
+  	cursor: pointer;
+  	border: none;
+  	transform: scale(0.7);
+	background-color: $color1;
+	&:hover {
+		background: lighten($color1, 5%);
+		color: $color3;
+		transform: scale(0.8);
+		transition: all 0.4s ease-in;
+	}
+
+}
+
+
